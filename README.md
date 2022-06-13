@@ -55,6 +55,7 @@ scp -r chat test@192.168.232.128:~/Desktop/test (将本地chat目录里所有文
 		Python3 ListChat.py
 	 
 	 交付镜像地址： 链接：https://pan.baidu.com/s/1mp8DuV-lwUupAh7Ubegs1w?pwd=5nn8 提取码：5nn8 （由于采用了vmware，所以附带vmware安装包）
+	 ubuntu 登录用户名： test 密码：  12345
 流程待优化。。。
 
 ![image](https://user-images.githubusercontent.com/12488600/173242814-80cca27e-8918-44ea-b6b5-ef4b22c93aba.png)
