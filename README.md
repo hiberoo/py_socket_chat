@@ -7,17 +7,13 @@
  * http://mirrors.aliyun.com/ubuntu-releases/20.04/
 # 3. 安装必要组件
 
-* ssh
-
- 	* ` apt-get install ssh-server`
-
-* Mysql5.7
-	* ` apt-get install mysql `
-
+* openssh
+ 	* ` apt-get install openssh-server`
+* Mysql8.0
+	* ` apt-get install mysql-server `
 * Python3 
  	* ` apt-get install python3` 
  	* ` apt install python3-pip` 
-
 * Vim  
  	* ` apt-get install vim` 
 * Git 
