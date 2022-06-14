@@ -47,7 +47,7 @@ CREATE TABLE `chat_log` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 ```
-# 7. 本地编码并测试
+# 7. 本地编码并测试(数据库可直接链接虚拟机中数据库，代码也可将虚拟机中目录通过sftp 映射到本地，这样就不用专门部署代码了)
 * 创建本地数据库和数据表
 * 创建本地项目py_socket_chat
 * 完成 client.py 和 server.py dbhelper  filehelper config.ini 
@@ -55,7 +55,7 @@ CREATE TABLE `chat_log` (
 
 # 8. 在ubuntu中部署脚本和数据库
 
-* 将本地文件传到ubuntu中
+* 将本地文件传到ubuntu中（可直接将虚拟机目录映射到本地直接编写，省去这一步）
  	* ` scp -r py_socket_chat test@{虚拟机ip}:~/Desktop/py_socket_chat `
 * 在ubuntu 部署数据库和数据表
 * 运行并测试脚本
