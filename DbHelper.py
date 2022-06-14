@@ -21,17 +21,15 @@ class DbHelper:
 
     @staticmethod
     def insert(table, user_name, target_name, message):
-        #try:
+        try:
             cursor = DbHelper.conn.cursor()
             sql = "insert into " + table + " (user_name,target_name,content,ctime) value(%s,%s,%s,%s)"
             cursor.execute(sql, (user_name, target_name, message, int(time.time())))
             DbHelper.conn.commit()
             return True
-        #except Exception as e:
-        #   print("发生异常", e)
-        #  return False
-        #finally:
-        #   DbHelper.close()
+        except Exception as e:
+            print("发生异常", e)
+            return False
 
     @staticmethod
     def get_all():
@@ -43,8 +41,7 @@ class DbHelper:
 
         except Exception as e:
             print("发生异常", e)
-        finally:
-            DbHelper.close()
+            return False
 
     @staticmethod
     def close():
