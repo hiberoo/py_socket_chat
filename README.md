@@ -6,20 +6,23 @@
 # 2. 安装ubuntu20.04.iso
  * http://mirrors.aliyun.com/ubuntu-releases/20.04/
 # 3. 安装必要组件
-
-* openssh
- 	* ` apt-get install openssh-server`
-* Mysql8.0
-	* ` apt-get install mysql-server `
-* Python3 
- 	* ` apt-get install python3` 
- 	* ` apt install python3-pip` 
 * Vim  
- 	* ` apt-get install vim` 
+ 	* `sudo apt-get install vim` 
+* openssh
+ 	* `sudo apt-get install openssh-server`(网络设置为NAT模式时，要进行端口转发，否则本地无法链接虚拟机)
+* Mysql8.0
+	* `sudo apt-get install mysql-server `
+* Python3 
+ 	* `sudo apt-get install python3` 
+ 	* `sudo apt install python3-pip` 
 * Git 
- 	* ` apt-get install git`
+ 	* `sudo apt-get install git`
 * sshkey 
- 	* ` ssh-keygen -t rsa` 
+ 	* `ssh-keygen -t rsa` 
+* pymysql 
+ 	* `pip3 install pymysql`
+* python3-tk
+	* `sudo apt-get install python3-tk`  
 
 # 4. 准备工作
 
