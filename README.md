@@ -73,6 +73,7 @@ CREATE TABLE `chat_log` (
 
 
 # 10. 备注：
+* 系统登录用户名 test ，密码 12345
 * 测试步骤
 	* ` cd ~/Desktop/py_socket_chat&source venv/bin/activate `
 	* ` python3 server.py `
