@@ -67,7 +67,9 @@ CREATE TABLE `chat_log` (
 * 运行并测试脚本
 
 # 9. 导出镜像（vdi）
-* 镜像地址 
+* 镜像地址 链接：https://pan.baidu.com/s/1_e2XkJPllXbF6nSG7dESbw?pwd=qg5g 
+* 提取码：qg5g 
+
 
 
 # 10. 备注：
