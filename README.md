@@ -5,33 +5,39 @@
 
 # 2. 安装ubuntu20.04.iso
  * http://mirrors.aliyun.com/ubuntu-releases/20.04/
-# 3. 安装必要组件
+
+# 3. 准备工作
 * Vim  
- 	* `sudo apt-get install vim` 
+	* `sudo apt-get install vim` 
 * openssh
  	* `sudo apt-get install openssh-server`(网络设置为NAT模式时，要进行端口转发，否则本地无法链接虚拟机)
-* Mysql8.0
-	* `sudo apt-get install mysql-server `
-* Python3 
- 	* `sudo apt-get install python3` 
- 	* `sudo apt install python3-pip` 
-* Git 
- 	* `sudo apt-get install git`
 * sshkey 
  	* `ssh-keygen -t rsa` 
-* pymysql 
- 	* `pip3 install pymysql`
-* python3-tk
-	* `sudo apt-get install python3-tk`  
-
-# 4. 准备工作
-
 * 拷贝 /home/{user}/.ssh/   中的公钥 放到 github中 
 * 登录github并新建仓库 py_socket_chat
 
 * 克隆仓库到本地或者ubuntu中（目前是ubuntu中） 
  	* ` git clone git@github.com:hiberoo/py_socket_chat.git ` 
 
+# 4. 安装必要组件
+
+* Mysq-serverl8.0
+	* `sudo apt-get install mysql-server `
+* Python3 
+ 	* `sudo apt-get install python3`(ubuntu20.04 自带python3.8，可省略这步) 
+ 	* `sudo apt install python3-pip` 
+* virtualenv
+	* `sudo apt install python3-virtualenv `
+
+* pymysql
+	* `cd ~/Desktop/py_socket_chat&source venv/bin/activate `  
+ 	* `pip3 install pymysql`
+ 	
+* Git 
+ 	* `sudo apt-get install git`
+
+* python3-tk
+	* `sudo apt-get install python3-tk`  
 	
 # 5. 准备建库语句
 ` CREATE DATABASE master DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;`
@@ -64,7 +70,13 @@ CREATE TABLE `chat_log` (
 * 镜像地址 
 
 
-
-	
+# 10. 备注：
+* 测试步骤
+	* ` cd ~/Desktop/py_socket_chat&source venv/bin/activate `
+	* ` python3 server.py `
+	* ` python3 client.py `
+	* ` poython3 Listchat.py ` (查看记录)
+* log地址
+	* /Desktop/py_socket_chat/xxxx_xx_xx(2022_06_15)
 
 
